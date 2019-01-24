@@ -1,0 +1,94 @@
+{
+  "ret": true,
+  "data": {
+    "city": "成都",
+    "swiperList": [{
+      "id": "0001",
+      "imgUrl":"http://img1.qunarzz.com/piao/fusion/1812/d6/daa880b254940402.jpg_750x200_b114308a.jpg"
+    },{
+      "id": "0002",
+      "imgUrl":"http://img1.qunarzz.com/piao/fusion/1811/31/da037478f37cf202.jpg_750x200_fe28d396.jpg"
+    },{
+      "id": "0003",
+      "imgUrl":"http://img1.qunarzz.com/piao/fusion/1811/a8/cb43c4ac6c215d02.jpg_750x200_83dee994.jpg"
+    }],
+    "iconList": [{
+      "id": "0001",
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
+      "desc": "景点门票"
+    },{
+      "id": "0002",
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/ab/6f7d6e44963c9302.png",
+      "desc": "泡温泉"
+    },{
+      "id": "0003",
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png",
+      "desc": "成都必游"
+    },{
+      "id": "0004",
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/e3/67df61427c8e1302.png",
+      "desc": "川剧变脸"
+    },{
+      "id": "0005",
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/97/02f5043b51b2102.png",
+      "desc": "峨眉山"
+    },{
+      "id": "0006",
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/fc/b10a6b2e4f0fe102.png",
+      "desc": "滑雪"
+    },{
+      "id": "0007",
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1804/5a/13ceb38dcf262f02.png",
+      "desc": "一日游"
+    },{
+      "id": "0008",
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/54/35899492b1302802.png",
+      "desc": "熊猫基地"
+    },{
+      "id": "0009",
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/87/20656da0ac042002.png",
+      "desc": "太子岭"
+    },{
+      "id": "0010",
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/87/20656da0ac042002.png",
+      "desc": "西岭雪山"
+    }],
+    "recommendList": [{
+      "id": "0001",
+      "imgUrl": "http://img1.qunarzz.com/sight/p0/1704/a5/a59677101e07d38a3.img.jpg_200x200_6064e939.jpg",
+      "title": "国色天香·陆地乐园",
+      "desc": "国色天香，天府之国，人间天堂"
+    },{
+      "id": "0002",
+      "imgUrl": "http://img1.qunarzz.com/sight/p0/1512/3a/3ab83c0358208e8d90.img.jpg_200x200_14e2fbfd.jpg",
+      "title": "花水湾四季温泉谷",
+      "desc": "花水湾四季温泉谷好玩巴适得板"
+    },{
+      "id": "0003",
+      "imgUrl": "http://img1.qunarzz.com/sight/p0/1612/1d/1d9a740c1f9e0efaa3.img.jpg_200x200_63285bd9.jpg",
+      "title": "成都海昌极地公园",
+      "desc": "成都海昌极地公园，各种海洋生物等待与你相见"
+    }],
+    "weekendList": [{
+      "id": "0001",
+      "imgUrl": "https://m.tuniucdn.com/fb2/t1/G4/M00/2E/5B/Cii-VVmvhZyICHfAAAGs41QxX-EAAA46gOpw5MAAaz7857_w800_h0_c0_t0.jpg",
+      "title": "[春节]海南三亚国光豪生双飞3-8日自由行",
+      "desc": "臻选三亚湾国际五星海景酒店，畅游4500平泳池，享网红打卡点旅拍，体验风味海南鸡饭，挑战高空玻璃栈道"
+    },{
+      "id": "0002",
+      "imgUrl": "https://m.tuniucdn.com/fb2/t1/G5/M00/7B/F6/Cii-s1qZKhCIEEwFABnhRp11Dl0AAD0YAInDOcAGeFe598_w800_h0_c0_t0.jpg",
+      "title": "海南三亚双飞5日游",
+      "desc": "避寒&蜜月&亲子，年终爆款0购物，康年/红树林/京海等酒店自选连住，24h专车接机，畅享蜈支洲一整天，万人出游甄选"
+    },{
+      "id": "0003",
+      "imgUrl": "https://m.tuniucdn.com/fb2/t1/G5/M00/58/C9/Cii-s1s0OPCIbNBFAA87SSpz6dYAAJPpgAAAAAADzth950_w800_h0_c0_t0.jpg",
+      "title": "泰国普吉岛芭东海滩5晚6或7日自由行",
+      "desc": "安达曼/心爱/千禧/卡利玛等精选芭东热闹海滩酒店，酒吧、商场、餐饮一条街，交通便利，超人气线路"
+    },{
+      "id": "0004",
+      "imgUrl": "https://m.tuniucdn.com/fb2/t1/G5/M00/ED/49/Cii-slwc4lqIHgDXAAki5d1UnWAAAR_EgLyZRYACSL9092_w800_h0_c0_t0.jpg",
+      "title": "[春节]丽江-大理-泸沽湖双飞6日游",
+      "desc": "臻品8人团，0购物，GL8/奔驰商务车老司机带队，1晚大理海景房，玉龙雪山/吉普车旅拍/摩梭篝火晚会，独立发班"
+    }]
+  }
+}
