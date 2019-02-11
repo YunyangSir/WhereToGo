@@ -9,7 +9,11 @@ export default new Router({
       path: '/',
       name: 'Home',
       component: () => import('./views/home/Home')
-    },
+    },{
+      path: '/city',
+      name: 'City',
+      component: () => import('./views/city/City')
+    }
 
   ]
 // route level code-splitting
