@@ -13,6 +13,10 @@ export default new Router({
       path: '/city',
       name: 'City',
       component: () => import('./views/city/City')
+    },{
+      path: '/detail/:id',
+      name: 'Detail',
+      component: () => import('./views/detail/Detail')
     }
 
   ]
