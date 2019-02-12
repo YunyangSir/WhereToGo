@@ -5,14 +5,18 @@
                 <div class="title border-topbottom">当前城市</div>
                 <div class="button-list">
                     <div class="button-wrapper">
-                        <div class="button">北京</div>
+                        <div class="button">{{this.currentCity}}</div>
                     </div>
                 </div>
             </div>
             <div class="area">
                 <div class="title border-topbottom">热门城市</div>
                 <div class="button-list">
-                    <div class="button-wrapper" v-for="item of hot" :key="item.id">
+                    <div class="button-wrapper"
+                         v-for="item of hot"
+                         :key="item.id"
+                         @click="handleCityClick(item.name)"
+                    >
                         <div class="button">{{item.name}}</div>
                     </div>
                 </div>
@@ -22,8 +26,12 @@
                  :key="key"
                  :ref="key"
             >
-                <div class="title border-bottom">{{key}}</div>
-                <div class="item-list border-bottom" v-for="innerItem of item" :key="innerItem.id">
+                <div class="title border-topbottom">{{key}}</div>
+                <div class="item-list border-bottom"
+                     v-for="innerItem of item"
+                     :key="innerItem.id"
+                     @click="handleCityClick(innerItem.name)"
+                >
                     <div class="item">{{innerItem.name}}</div>
                 </div>
             </div>
@@ -34,6 +42,7 @@
 
 <script>
   import Bscroll from 'better-scroll'
+  import { mapState,mapMutations } from 'vuex'
   export default {
     name: "CityList",
     props: {
@@ -41,13 +50,12 @@
       cities: Object,
       letter: String
     },
-    data () {
-        return {
-
-        }
-    },
-    mounted () {
-      this.scroll = new Bscroll(this.$refs.wrapper)
+    methods: {
+      handleCityClick (city) {
+        this.changeCity(city)
+        this.$router.push('/');
+      },
+      ...mapMutations(['changeCity'])
     },
     watch: {
       letter () {
@@ -56,6 +64,17 @@
           this.scroll.scrollToElement(element)
         }
       }
+    },
+    computed: {
+      ...mapState({
+        currentCity: 'city'
+      })
+    },
+    mounted () {
+      // 默认没有加‘click: true’，需要手动添加，不然无法触发click事件
+      this.scroll = new Bscroll(this.$refs.wrapper, {
+        click: true
+      })
     }
   }
 </script>
@@ -66,7 +85,7 @@
             border-color: #ccc
         &:after
             border-color: #ccc
-    .border-topbottom
+    .border-bottom
         &:before
             border-color: #ccc
     .list
@@ -93,8 +112,8 @@
                     padding: .1rem 0
                     text-align: center
                     border: .02rem solid #ccc
-    .item-list
-        .item
-            line-height: .76rem
-            padding-left: .2rem
+        .item-list
+            .item
+                line-height: .76rem
+                padding-left: .2rem
 </style>
