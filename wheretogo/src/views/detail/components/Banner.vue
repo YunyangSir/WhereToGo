@@ -1,19 +1,19 @@
 <template>
     <div>
         <div class="banner" @click="handleBannerClick">
-            <img class="banner-img" src="//img1.qunarzz.com/sight/p0/1704/a5/a59677101e07d38a3.img.jpg_600x330_5aa6e477.jpg"/>
+            <img class="banner-img" :src="bannerImg"/>
             <div class="banner-info">
                 <div class="banner-title">
-                    国色天乡·陆地乐园
+                    {{this.sightName}}
                 </div>
                 <div class="banner-number">
                     <span class="iconfont banner-icon">&#xe678;</span>
-                    43
+                    {{this.bannerImgs.length}}
                 </div>
             </div>
         </div>
         <common-gallary
-            :imgs="imgs"
+            :imgs="bannerImgs"
             v-show="showGallary"
             @close="handleGallaryClose"
         >
@@ -29,13 +29,14 @@
     components: {
       CommonGallary
     },
+    props: {
+      sightName: String,
+      bannerImg: String,
+      bannerImgs: Array
+    },
     data () {
       return {
-        showGallary: false,
-        imgs: ['//img1.qunarzz.com/sight/p0/1704/a5/a59677101e07d38a3' +
-        '.img.jpg_600x330_5aa6e477.jpg',
-          'https://m.tuniucdn.com/fb2/t1/G4/M00/2E/5B/Cii-VVm' +
-          'vhZyICHfAAAGs41QxX-EAAA46gOpw5MAAaz7857_w800_h0_c0_t0.jpg']
+        showGallary: false
       }
     },
     methods: {
